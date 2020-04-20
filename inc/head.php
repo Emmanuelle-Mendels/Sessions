@@ -1,5 +1,23 @@
 <?php session_start();
-?>
+if(!empty($_POST['loginname'])){
+    $_SESSION['loginname'] = $_POST['loginname'];
+    header("Location: index.php");
+}
+
+
+if(empty($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
+
+if (isset($_GET['add_to_cart'])) {
+    $num = $_GET['add_to_cart'];
+    $name = $catalog[$num]['name'];
+    $_SESSION['cart'][]=['cookie_name' => $name];
+    header("Location: index.php");
+}
+
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

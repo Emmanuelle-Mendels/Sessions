@@ -1,8 +1,7 @@
 <?php require 'inc/head.php';
-if(!empty($_POST['loginname'])){
-
-        $_SESSION['loginname'] = $_POST['loginname'];
-        header("Location: index.php");
+if(!empty($_SESSION['loginname'])){
+    header("Location: /index");
+    exit();
 }
  ?>
 <div class="container" style="margin-top:40px">
