@@ -40,23 +40,28 @@
                     <li><a href="#">Nuts</a></li>
                     <li><a href="#">Gluten full</a></li>
                     <li>
+                        <?php if(empty($_SESSION['loginname'])): ?>
+                            <a href="login.php"><strong>LOG IN</strong></a>
+                        <?php else: ?>
+                            <a href="../logout.php"><strong>Log out</strong></a>
+                        <?php endif;?>
+                    </li>
+                    <li>
                         <a href="/cart.php" class="btn btn-warning navbar-btn">
                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                             Cart
                         </a>
                     </li>
+
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <?php if(empty($_SESSION['loginname'])): ?>
-    <div class="login container-fluid text-center">
-        <a href="login.php"><strong>LOG IN</strong></a>
-        <?php else: ?>
-    </div>
     <div class="container-fluid text-right">
+        <?php if(!empty($_SESSION['loginname'])): ?>
             <strong> Hello <?= $_SESSION['loginname'] ;?>!</strong>
-            <a href="../logout.php"><strong>Log out</strong></a>
+        <?php else: ?>
+            <strong></strong>
         <?php endif;?>
     </div>
 

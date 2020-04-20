@@ -1,7 +1,6 @@
 <?php require 'inc/data/products.php'; ?>
-<?php require 'inc/head.php';
+<?php require 'inc/head.php';?>
 
-if(isset($_SESSION['loginname'])):?>
 
 <section class="cookies container-fluid">
     <div class="row">
@@ -12,14 +11,16 @@ if(isset($_SESSION['loginname'])):?>
                     <figcaption class="caption">
                         <h3><?= $cookie['name']; ?></h3>
                         <p><?= $cookie['description']; ?></p>
+                        <?php if(isset($_SESSION['loginname'])):?>
                         <a href="?add_to_cart=<?= $id; ?>" class="btn btn-primary">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Add to cart
                         </a>
+                        <?php endif;?>
                     </figcaption>
                 </figure>
             </div>
         <?php } ?>
     </div>
 </section>
-<?php endif;?>
+
 <?php require 'inc/foot.php'; ?>
