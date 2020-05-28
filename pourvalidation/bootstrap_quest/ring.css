@@ -1,0 +1,76 @@
+.main-ring p,
+.title-ring p,
+.rings p {
+    margin: 50px;
+    font-size: 50px;
+}
+
+.the-ring {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px #fef683;
+    border: 13.3333333333px solid #e6d802;
+}
+
+.precious-ring {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 1.75px 1.75px #feb983;
+    border: 4.6666666667px solid #e66602;
+}
+
+.ring-1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0.25px 0.25px #959595;
+    border: 0.6666666667px solid #484848;
+    margin-right: -3px;
+}
+
+.ring-2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0.375px 0.375px #959595;
+    border: 1px solid #484848;
+    margin-right: -4.5px;
+}
+
+.ring-3 {
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    box-shadow: 0.5625px 0.5625px #959595;
+    border: 1.5px solid #484848;
+    margin-right: -6.75px;
+}
+
+.ring-4 {
+    width: 33.75px;
+    height: 33.75px;
+    border-radius: 50%;
+    box-shadow: 0.84375px 0.84375px #959595;
+    border: 2.25px solid #484848;
+    margin-right: -10.125px;
+}
+
+.ring-5 {
+    width: 50.625px;
+    height: 50.625px;
+    border-radius: 50%;
+    box-shadow: 1.265625px 1.265625px #959595;
+    border: 3.375px solid #484848;
+    margin-right: -15.1875px;
+}
+
+.ring-6 {
+    width: 75.9375px;
+    height: 75.9375px;
+    border-radius: 50%;
+    box-shadow: 1.8984375px 1.8984375px #959595;
+    border: 5.0625px solid #484848;
+    margin-right: -22.78125px;
+}

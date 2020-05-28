@@ -1,0 +1,56 @@
+@import "ring.css";
+
+.title-section-fellows {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reward {
+    display: flex;
+    flex-direction: column;
+}
+
+.reward figcaption {
+    display: none;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.reward:hover figcaption {
+    display: block;
+    position: absolute;
+    top:0;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dead figcaption {
+    display: block;
+    position: absolute;
+    align-self: center;
+    font-size: x-large;
+}
+
+.button-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: lavender;
+}
+
+.link-twitter {
+    color: lavender;
+}
